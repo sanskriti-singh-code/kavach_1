@@ -82,7 +82,7 @@ while True:
             confidence = math.ceil((box.conf[0] * 100)) / 100
 
             # check confidence threshold
-            if confidence > 7.0:
+            if confidence > 0.7:
                 # bounding box
                 x1, y1, x2, y2 = box.xyxy[0]
                 x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)  # convert to int values
